@@ -1,0 +1,319 @@
+/* Fonts imported:
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Inconsolata', monospace;
+
+*/
+html , body {
+	margin: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #4b0082;
+}
+h1 {
+	color: #7715b5;
+	font-family: "verdana";
+}
+h2 {
+	font-family: "helvetica";
+}
+h3 { 
+	font-family: "helvetica";
+	color: #a3d5ff;
+	background-image: url(http://static.simpledesktops.com/uploads/desktops/2011/06/05/blue.png.625x385_q100.png);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px 10px 70px 70px;
+	width: 265px;
+}
+p {
+	width: 45%;
+	padding: 25px;
+	margin: 25px;
+	border-radius: 0px 20px;
+	font-size: 14pt;
+
+}
+ol {
+	list-style-type: upper-roman;
+	font-family: "trebuchet";
+	font-size: 16pt;
+}
+ul{
+	list-style-image: url("bullets/shine.png");
+	font-family: "courier new";
+	font-size: 14pt;
+}
+img { /* This is to keep my background image crisp, as some of the ones I use are a little low-res */
+	width: 100%;
+	height: 100%;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+.all {
+	height: 100%;
+}
+.info_body {
+	background: url("../misc/bg_info.png");
+	background-size: 100% 1080px;
+}
+.spiffy{
+	display: inline-block;
+	border-radius: 200px;
+	background-color: Transparent;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 0px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.spiffy:hover {
+	background-color: Transparent
+}
+
+.spiffy:active {
+  background-color: #373737;
+  box-shadow: 0 5px #666;
+  transform: translateY(16px);
+}
+.spiffy span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.75s;
+}
+.spiffy span:after {
+  content: '\25E2';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.75s;
+}
+
+.spiffy:hover span {
+  padding-right: 25px;
+}
+
+.spiffy:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.center-vert {
+	position: absolute;
+	margin: auto;
+	top: 87.3%;
+	right: 20.35%;
+}
+.yt_vid_bg{ /* This class is for a YouTube video to be in the background */
+	position: fixed; /* This keeps the video from moving */
+	z-index: -99; /* Keeps the video in the very back. Think of a Z-axis in a 3-D space */
+	width: 100%; /* These let the video cover the whole page */
+	height: 100%;
+}
+.txt_box_gray {
+	background-color: #282e34;
+	height: 200px;
+	color: #ffffff;
+}
+.div_gray {
+	background-color: #282e34
+}
+.txt_box_white {
+	background-color: #ffffff;
+	height: 200px;
+	color: #282e34;
+}
+.div_white {
+	background-color: #ffffff;
+}
+.plx_academy { /* This and all 'plx' classes are for the parallax scrolling effect */
+	background-image: url("parallax/info/academy.png");
+	min-height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.plx_pc {
+	background-image: url("parallax/info/pc.png");
+	min-height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.plx_movies {
+	background-image: url("parallax/info/movies.png");
+	min-height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.plx_java {
+	background-image: url("parallax/info/java.png");
+	height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.plx_future {
+	background-image: url("parallax/info/future.png");
+	height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bold {
+	font-weight: bold;
+	display:inline-block;
+    -webkit-transform:scale(1.025,1); /* Safari and Chrome */
+    -moz-transform:scale(1.025,1); /* Firefox */
+    -ms-transform:scale(1.025,1); /* IE 9 */
+    -o-transform:scale(1.025,1); /* Opera */
+    transform:scale(1.025,1); /* W3C */
+}
+.movie_button {
+	background-color: #f4511e;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+.movie_button:hover {
+	opacity: 1;
+}
+.movie_button:active {
+	transform: translateY(32px);
+}
+@font-face {
+	font-family: "archive";
+	src: url("css/fonts/archive-webfont.ttf");
+}
+@font-face {
+	font-family: "bakersfield_bold";
+	src: url("css/fonts/bakersfield_bold.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
